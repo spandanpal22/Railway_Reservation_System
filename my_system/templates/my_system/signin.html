@@ -1,0 +1,72 @@
+{% extends 'my_system/index.html' %}
+{% load static %}
+{% block title %}Sign In{% endblock %}
+{% block head %}
+    <style>
+
+        .signin {
+
+            background-image: url("{% static 'my_system/images/img4.jpg' %}");
+            background-position: center center;
+        }
+
+        form {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            opacity: 0.9;
+        }
+
+        .c {
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="signin">
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-7">
+                    <form>
+                        <div>
+                            <h2 style="text-align: center;margin:30px; font-family: 'Roboto Slab', serif;">Please fill
+                                in the form to Sign In</h2>
+                        </div>
+                        <div class="form-group c ">
+                            <label for="inputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail1" name="email"
+                                   aria-describedby="emailHelp"
+                                   placeholder="Enter email" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll don't share your email with anyone
+                                else.
+                            </small>
+                        </div>
+                        <div class="form-group c">
+                            <label for="inputPassword1">Password</label>
+                            <input type="password" class="form-control" id="inputPassword1" name="password"
+                                   placeholder="Password" pattern=".{6,}" title="Six or more characters" required>
+                        </div>
+                        <div class="form-group form-check c">
+                            <input type="checkbox" class="form-check-input c" id="rememberMe">
+                            <label class="form-check-label c" for="rememberMe">Remember me</label>
+                        </div>
+
+                        <div class="c">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                        <div class="c">
+                            <a href="#">Forgot Passowrd?</a>
+                        </div>
+                        <div class="c">
+                            <a href="{% url 'signup' %}">Don't have an account?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
