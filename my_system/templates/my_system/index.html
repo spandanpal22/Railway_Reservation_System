@@ -52,15 +52,29 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ticketing
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{% url 'api' %}">Book Tickets</a>
+                    <a class="dropdown-item" href="{% url 'api' %}">Cancel Tickets</a>
+                    <a class="dropdown-item" href="{% url 'api' %}">View Tickets</a>
+                </div>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'search_trains' %}">Search Trains</a>
             </li>
+
+            <!--
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'book_tickets' %}">Book Tickets</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'cancel_tickets' %}">Cancel Tickets</a>
             </li>
+            -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -95,6 +109,9 @@
             <div class="col">
                 <div class="alert alert-success" role="alert" style="text-align: center;">
                     Thank you for your suggestion.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -110,7 +127,8 @@
             services.</p>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" title="Press to give suggestion" data-target="#exampleModalCenter">
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" title="Press to give suggestion"
+                data-target="#exampleModalCenter">
             Suggestions
         </button>
 
@@ -234,7 +252,7 @@
                         <h5 class="card-title">Train 1</h5>
 
                         <a href="#" class="btn btn-primary" type="button" data-toggle="collapse"
-                            title="Press to see details." data-target="#card1" aria-expanded="false"
+                           title="Press to see details." data-target="#card1" aria-expanded="false"
                            aria-controls="collapseExample">Show Details</a>
                         <div class="collapse" id="card1">
                             <p>

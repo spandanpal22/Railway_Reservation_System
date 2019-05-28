@@ -14,5 +14,7 @@ urlpatterns = [
     path('signin', views.signin, name='signin'),
     path('signup', views.signup, name='signup'),
     path('signup2', views.UserFormView.as_view(), name='signup2'),
+    path('api', views.TicketView.as_view(), name='api'),
+    path('api/<int:pk>', views.TicketView.as_view(),name='api2'),
 
 ]
