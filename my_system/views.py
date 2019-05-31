@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, HttpResponse
 
-from .models import Suggestion, UserRegistration, Train_Data,Ticket
+from .models import Suggestion, UserRegistration, Train_Data, Ticket
 
 from django.contrib import messages
 from django.http import HttpResponse
@@ -118,8 +118,21 @@ class UserFormView(View):
 
     def post(self, request):
         form = self.form_class(request.POST)
+        flag_userReg = 0
 
         if form.is_valid():
+            firstName_r=request.POST.get('firstName')
+            lastName_r=request.POST.get('lastName')
+            username_r=request.POST.get('username')
+            address_r=request.POST.get('address')
+            gender_r=request.POST.get('gender')
+            dob_r=request.POST.get('dob')
+            email_r=request.POST.get('email')
+            mobileNumber_r=request.POST.get('mobileNumber')
+            occupation_r=request.POST.get('occupation')
+            ur=UserRegistration(firstName=firstName_r,lastName=lastName_r,username=username_r,address=address_r,gender=gender_r,dob=dob_r,email=email_r,mobileNumber=mobileNumber_r,occupation=occupation_r)
+            ur.save()
+
             user = form.save(
                 commit=False)  # this will save the entered data in user object but won't save in database
 
@@ -132,12 +145,14 @@ class UserFormView(View):
 
             user = authenticate(username=username, password=password)
 
+
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return redirect('home')
+                    flag_userReg=1
+                    return render(request,'my_system/signup.html',{'flag_userReg':flag_userReg})
 
-        return render(request, self.template_name, {'form': form})
+        return render(request, self.template_name, {'form': form,'flag_userReg':flag_userReg})
 
 
 """
@@ -184,4 +199,3 @@ class TicketView(APIView):
         ticket = get_object_or_404(Ticket.objects.all(), pk=pk)
         ticket.delete()
         return Response({"message": "Ticket with id `{}` has been deleted.".format(pk)}, status=204)
-
