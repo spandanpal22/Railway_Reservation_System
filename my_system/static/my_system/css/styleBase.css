@@ -9,9 +9,20 @@ body {
 nav .nav-link:hover {
 
     background-position: bottom;
-    box-shadow: 0px 2px  black;
+    box-shadow: 0px 2px black;
 }
 
+#change:hover {
+    background-position: bottom;
+    box-shadow: none;
+    color: #4424ff;
+}
+
+#change {
+    color: #4424ff;
+    font-size: 17px;
+    text-shadow: 1px 1px black;
+}
 
 #myBtn {
     display: none;

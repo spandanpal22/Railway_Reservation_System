@@ -5,7 +5,8 @@ from .models import Suggestion, UserRegistration, Train_Data, Ticket
 from django.contrib import messages
 from django.http import HttpResponse
 
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from django.views.generic import View
 from .forms import UserForm
 
@@ -17,70 +18,59 @@ from .serializers import TicketSerializer
 
 import os
 
+@login_required(login_url='/signin')
+def bookTicketsUser(request):
+    username = request.user.username
+    return render(request, 'my_system/my_user/book_tickets_user.html',{'username':username})
+
+@login_required(login_url='/signin')
+def cancelTicketsUser(request):
+    username = request.user.username
+    return render(request, 'my_system/my_user/cancel_tickets_user.html',{'username':username})
+
+@login_required(login_url='/signin')
+def complaintsUser(request):
+    username=request.user.username
+    return render(request, 'my_system/my_user/complaints_user.html',{'username':username})
+
+@login_required(login_url='/signin')
+def foreignHolidayUser(request):
+    username = request.user.username
+    return render(request, 'my_system/my_user/holiday_foreign_user.html',{'username':username})
+
+@login_required(login_url='/signin')
+def indiaHolidayUser(request):
+    username = request.user.username
+    return render(request, 'my_system/my_user/holiday_india_user.html',{'username':username})
+
+@login_required(login_url='/signin')
+def indexUser(request):
+    username = request.user.username
+    return render(request, 'my_system/my_user/index_user.html',{'username':username})
+
+@login_required(login_url='/signin')
+def suggestUser(request):
+    username = request.user.username
+    flag = 0
+    if request.method == 'POST':
+        name_r = username
+        email_r = request.POST.get('Email')
+        suggestion_r = request.POST.get('Suggestion')
+
+        s = Suggestion(name=name_r, email=email_r, suggestion=suggestion_r)
+        s.save()
+
+        flag = 1
+
+        return render(request, 'my_system/my_user/index_user.html', {'flag': flag,'username':username})
+    else:
+        return render(request, 'my_system/my_user/index_user.html', {'flag': flag,'username':username})
+
+
+
 
 def index(request):
     return render(request, 'my_system/index.html')
-
-
-def complaints(request):
-    return render(request, 'my_system/complaints.html')
-
-
-def foreignHoliday(request):
-    return render(request, 'my_system/holiday_foreign.html')
-
-
-def indiaHoliday(request):
-    return render(request, 'my_system/holiday_india.html')
-
-
-def bookTickets(request):
-    return render(request, 'my_system/book_tickets.html')
-
-
-def cancelTickets(request):
-    return render(request, 'my_system/cancel_tickets.html')
-
-
-def searchTrains(request):
-    if request.method == 'POST':
-        from_r = request.POST.get('from')
-        to_r = request.POST.get('to')
-
-        req_t = {}
-        all_trains = Train_Data.objects.all()
-
-        c = 0
-        arr = []
-        req_t['trains'] = arr
-        req_t['flag'] = 3
-        for train in all_trains:
-            flag_to = 0
-            flag_from = 0
-            train_no = train.trainNumber
-
-            filename = '{0}.txt'.format(train_no)
-
-            ts = os.path.join('H:\\Pyharm Projects\\railwayReservationSystem\\uploads\\train_stoppages', filename)
-
-            f = open(ts, "r")
-            stops = f.readlines()
-            print(stops)
-            for stop in stops:
-                if to_r + '\n' == stop or to_r == stop:
-                    flag_to = 1
-                if from_r + '\n' == stop or from_r == stop:
-                    flag_from = 1
-                if flag_to == 1 and flag_from == 1:
-                    req_t['trains'].append(
-                        str(train.trainNumber) + "  /  " + str(train.trainName) + "  /  " + str(train.runningDays))
-                    req_t['flag'] = 2
-                    break
-
-            f.close()
-        return render(request, 'my_system/search_trains.html', req_t)
-
-    return render(request, 'my_system/search_trains.html')
 
 
 def signin(request):
@@ -121,16 +111,18 @@ class UserFormView(View):
         flag_userReg = 0
 
         if form.is_valid():
-            firstName_r=request.POST.get('firstName')
-            lastName_r=request.POST.get('lastName')
-            username_r=request.POST.get('username')
-            address_r=request.POST.get('address')
-            gender_r=request.POST.get('gender')
-            dob_r=request.POST.get('dob')
-            email_r=request.POST.get('email')
-            mobileNumber_r=request.POST.get('mobileNumber')
-            occupation_r=request.POST.get('occupation')
-            ur=UserRegistration(firstName=firstName_r,lastName=lastName_r,username=username_r,address=address_r,gender=gender_r,dob=dob_r,email=email_r,mobileNumber=mobileNumber_r,occupation=occupation_r)
+            firstName_r = request.POST.get('firstName')
+            lastName_r = request.POST.get('lastName')
+            username_r = request.POST.get('username')
+            address_r = request.POST.get('address')
+            gender_r = request.POST.get('gender')
+            dob_r = request.POST.get('dob')
+            email_r = request.POST.get('email')
+            mobileNumber_r = request.POST.get('mobileNumber')
+            occupation_r = request.POST.get('occupation')
+            ur = UserRegistration(firstName=firstName_r, lastName=lastName_r, username=username_r, address=address_r,
+                                  gender=gender_r, dob=dob_r, email=email_r, mobileNumber=mobileNumber_r,
+                                  occupation=occupation_r)
             ur.save()
 
             user = form.save(
@@ -143,16 +135,149 @@ class UserFormView(View):
 
             user.save()
 
-            user = authenticate(username=username, password=password)
+            flag_userReg = 1
+            return render(request, 'my_system/signup.html', {'flag_userReg': flag_userReg})
 
 
-            if user is not None:
-                if user.is_active:
-                    login(request, user)
-                    flag_userReg=1
-                    return render(request,'my_system/signup.html',{'flag_userReg':flag_userReg})
+        return render(request, self.template_name, {'form': form, 'flag_userReg': flag_userReg})
 
-        return render(request, self.template_name, {'form': form,'flag_userReg':flag_userReg})
+
+class SignInFormView(View):
+    form_class = UserForm
+    template_name = 'my_system/signin.html'
+
+    def get(self, request):
+        form = self.form_class(None)
+        return render(request, self.template_name, {'form': form})
+
+    def post(self, request):
+        form = self.form_class(request.POST)
+        flag_userSignIn = 0
+
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            flag_userSignIn = 1
+            return render(request, 'my_system/my_user/index_user.html',
+                          {'flag_userSignIn': flag_userSignIn, 'username': username})
+
+
+        return render(request, self.template_name, {'form': form, 'flag_userSignIn': flag_userSignIn})
+
+def signout(request):
+    logout(request)
+    return render(request, 'my_system/index.html')
+
+
+
+"""
+def complaints(request):
+    return render(request, 'my_system/complaints.html')
+
+
+def foreignHoliday(request):
+    return render(request, 'my_system/holiday_foreign.html')
+
+
+def indiaHoliday(request):
+    return render(request, 'my_system/holiday_india.html')
+
+
+def bookTickets(request):
+    return render(request, 'my_system/book_tickets.html')
+
+
+def cancelTickets(request):
+    return render(request, 'my_system/cancel_tickets.html')
+"""
+
+
+"""
+def searchTrains(request):
+    if request.method == 'POST':
+        from_r = request.POST.get('from')
+        to_r = request.POST.get('to')
+
+        req_t = {}
+        all_trains = Train_Data.objects.all()
+
+        c = 0
+        arr = []
+        req_t['trains'] = arr
+        req_t['flag'] = 3
+        for train in all_trains:
+            flag_to = 0
+            flag_from = 0
+            train_no = train.trainNumber
+
+            filename = '{0}.txt'.format(train_no)
+
+            ts = os.path.join('H:\\Pyharm Projects\\railwayReservationSystem\\uploads\\train_stoppages', filename)
+
+            f = open(ts, "r")
+            stops = f.readlines()
+            print(stops)
+            for stop in stops:
+                if to_r + '\n' == stop or to_r == stop:
+                    flag_to = 1
+                if from_r + '\n' == stop or from_r == stop:
+                    flag_from = 1
+                if flag_to == 1 and flag_from == 1:
+                    req_t['trains'].append(
+                        str(train.trainNumber) + "  /  " + str(train.trainName) + "  /  " + str(train.runningDays))
+                    req_t['flag'] = 2
+                    break
+
+            f.close()
+        return render(request, 'my_system/search_trains.html', req_t)
+
+    return render(request, 'my_system/search_trains.html')
+"""
+
+@login_required(login_url='/signin')
+def searchTrainsUser(request):
+    username = request.user.username
+    if request.method == 'POST':
+        from_r = request.POST.get('from')
+        to_r = request.POST.get('to')
+
+        req_t = {}
+        all_trains = Train_Data.objects.all()
+
+        c = 0
+        arr = []
+        req_t['trains'] = arr
+        req_t['flag'] = 3
+        for train in all_trains:
+            flag_to = 0
+            flag_from = 0
+            train_no = train.trainNumber
+
+            filename = '{0}.txt'.format(train_no)
+
+            ts = os.path.join('H:\\Pyharm Projects\\railwayReservationSystem\\uploads\\train_stoppages', filename)
+
+            f = open(ts, "r")
+            stops = f.readlines()
+            print(stops)
+            for stop in stops:
+                if to_r + '\n' == stop or to_r == stop:
+                    flag_to = 1
+                if from_r + '\n' == stop or from_r == stop:
+                    flag_from = 1
+                if flag_to == 1 and flag_from == 1:
+                    req_t['trains'].append(
+                        str(train.trainNumber) + "  /  " + str(train.trainName) + "  /  " + str(train.runningDays))
+                    req_t['flag'] = 2
+                    break
+
+            f.close()
+        req_t['username']=request.user.username
+        return render(request, 'my_system/my_user/search_trains_user.html', req_t)
+
+    return render(request, 'my_system/my_user/search_trains_user.html',{'username':username})
 
 
 """
@@ -177,7 +302,7 @@ class TicketView(APIView):
             article_saved = serializer.save()
             return Response({"success": "Article '{}' created successfully".format(article_saved.title)})
 
-            """
+        """
 
         serializer = TicketSerializer(data=request.data)
         if serializer.is_valid():
