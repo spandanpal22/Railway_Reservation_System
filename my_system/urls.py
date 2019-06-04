@@ -27,4 +27,7 @@ urlpatterns = [
     path('cancel-tickets_user', views.cancelTicketsUser, name='cancel_tickets_user'),
     path('search-trains_user', views.searchTrainsUser, name='search_trains_user'),
 
+    path('animations', views.animations, name='animations'),
+    path('profile', views.profile, name='myProfile'),
+
 ]

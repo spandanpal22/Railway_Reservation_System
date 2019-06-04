@@ -27,23 +27,23 @@
 {% block content %}
 
     {% if flag_userSignIn == 0 %}
-    <div class="container-fluid" style="margin-top: 10px;">
-        <div class="row">
-            <div class="col">
-                <div class="alert alert-danger" role="alert" style="text-align: center;">
-                    You have entered a wrong username or password. Please try again.
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+        <div class="container-fluid" style="margin-top: 10px;">
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-danger" role="alert" style="text-align: center;">
+                        You have entered a wrong username or password. Please try again.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-{% endif %}
+    {% endif %}
 
 
     <div class="signin">
-        <div class="container">
+        <div class="container flipInX animated wow">
             <div class="row">
                 <div class="col"></div>
                 <div class="col-lg-7">
@@ -62,7 +62,8 @@
                         <div class="form-group c">
                             <label for="inputPassword1">Password</label>
                             <input type="password" class="form-control" id="inputPassword1" name="password"
-                                   placeholder="Password" pattern=".{6,}" title="Six or more characters" required>
+                                   placeholder="Password" pattern=".{8,}"
+                                   title="Eight or more characters.Don't use a simple password." required>
                         </div>
                         <div class="form-group form-check c">
                             <input type="checkbox" class="form-check-input c" id="rememberMe">

@@ -12,8 +12,14 @@
 
 
 {% block signin %}
-    <li class="nav-item" style="margin-right: 5px;margin-left: 5px;text-align: center;">
-        <div class="nav-link" id="change"><b>Welcome!! {{ username }}</b></div>
+    <li class="nav-item dropdown" style="margin-right: 5px;margin-left: 5px;text-align: center;">
+        <a class="nav-link dropdown-toggle" href="#" id="change" role="button"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b>Welcome!! {{ username }}</b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="{% url 'myProfile' %}">My Profile</a>
+        </div>
     </li>
     <div class="form-inline my-2 my-lg-0">
         <a href="{% url 'signout' %}">
@@ -54,12 +60,10 @@
                         <form action="{% url 'suggest_user' %}" method="post">
                             {% csrf_token %}
                             <div class="form-group">
-                                <div>Username</div>
-
-                                <div  id="name" >
-                                    {{ username }}
-
-                                </div>
+                                <label for="name" style="float: left;">Username</label>
+                                <input type="text" class="form-control" name="Name" id="name"
+                                       aria-describedby="name" placeholder="{{ username }}" required
+                                       readonly="readonly">
                             </div>
                             <div class="form-group">
                                 <label for="email1" style="float: left;">Email address</label>
@@ -86,7 +90,7 @@
     </div>
 
 
-    <div class="container-fluid" style="margin-bottom: 5px;">
+    <div class="container-fluid fadeInRightBig animated wow" data-wow-delay="0.3s" style="margin-bottom: 5px;">
         <div class="row ">
             <div class="bd-example">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -131,7 +135,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="margin-bottom: 10px;">
+    <div class="container-fluid flipInX animated wow" data-wow-delay="0.3s" style="margin-bottom: 10px;">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card quote" style="text-align: center;">
@@ -154,7 +158,7 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-lg-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card rotateIn animated wow" data-wow-delay="0.3s" style="width: 18rem;">
                     <img src="{% static 'my_system/images/c1.jpg' %}" class="card-img-top" alt="Train 1">
                     <div class="card-body">
                         <h5 class="card-title">Train 1</h5>
@@ -175,7 +179,7 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card rotateIn animated wow" data-wow-delay="0.3s" style="width: 18rem;">
                     <img src="{% static 'my_system/images/c2.jpg' %}" class="card-img-top" alt="Train 2">
                     <div class="card-body">
                         <h5 class="card-title">Train 2</h5>
@@ -194,7 +198,7 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card rotateIn animated wow" data-wow-delay="0.3s" style="width: 18rem;">
                     <img src="{% static 'my_system/images/c3.jpg' %}" class="card-img-top" alt="Train 3">
                     <div class="card-body">
                         <h5 class="card-title">Train 3</h5>
@@ -216,7 +220,7 @@
         <div class="row">
             <div class="col"></div>
             <div class="col-lg-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card rotateIn animated wow" data-wow-delay="0.3s" style="width: 18rem;">
                     <img src="{% static 'my_system/images/c4.jpg' %}" class="card-img-top" alt="Train 4">
                     <div class="card-body">
                         <h5 class="card-title">Train 4</h5>
@@ -235,7 +239,7 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card rotateIn animated wow" data-wow-delay="0.3s" style="width: 18rem;">
                     <img src="{% static 'my_system/images/c5.jpg' %}" class="card-img-top" alt="Train 5">
                     <div class="card-body">
                         <h5 class="card-title">Train 5</h5>
@@ -254,7 +258,7 @@
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-3">
-                <div class="card" style="width: 18rem;">
+                <div class="card rotateIn animated wow" data-wow-delay="0.3s" style="width: 18rem;">
                     <img src="{% static 'my_system/images/c6.jpg' %}" class="card-img-top" alt="Train 6">
                     <div class="card-body">
                         <h5 class="card-title">Train 6</h5>

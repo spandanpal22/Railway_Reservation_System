@@ -5,27 +5,42 @@
       <change afterPath="$USER_HOME$/PycharmProjects/FirstTry/.idea/dataSources.local.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/PycharmProjects/FirstTry/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/PycharmProjects/FirstTry/my_site/migrations/0002_contact_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_system/static/my_system/css/styleBaseUser.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/book_tickets_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/cancel_tickets_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/complaints_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_foreign_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_india_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/index_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/search_trains_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_system/migrations/0005_complaint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_system/migrations/0006_auto_20190604_1845.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_system/static/my_system/images/myProfileBG.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_system/templates/my_system/animations.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/my_profile.html" afterDir="false" />
       <change beforePath="$USER_HOME$/PycharmProjects/FirstTry/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/PycharmProjects/FirstTry/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$USER_HOME$/PycharmProjects/FirstTry/db.sqlite3" beforeDir="false" afterPath="$USER_HOME$/PycharmProjects/FirstTry/db.sqlite3" afterDir="false" />
       <change beforePath="$USER_HOME$/PycharmProjects/FirstTry/my_site/models.py" beforeDir="false" afterPath="$USER_HOME$/PycharmProjects/FirstTry/my_site/models.py" afterDir="false" />
       <change beforePath="$USER_HOME$/PycharmProjects/FirstTry/my_site/views.py" beforeDir="false" afterPath="$USER_HOME$/PycharmProjects/FirstTry/my_site/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/static/my_system/css/animate.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_system/static/my_system/css/styleBase.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/static/my_system/css/styleBase.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_system/static/my_system/images/complaintsBG.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/static/my_system/images/complaintsBG.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/complaints.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/complaints.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/static/my_system/css/styleBaseUser.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/static/my_system/css/styleBaseUser.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/book_tickets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/cancel_tickets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/complaints.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/holiday_foreign.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/holiday_india.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/my_user/book_tickets_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/book_tickets_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/my_user/cancel_tickets_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/cancel_tickets_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/my_user/complaints_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/complaints_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_foreign_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_foreign_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_india_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_india_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/my_user/index_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/index_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/my_user/search_trains_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/my_user/search_trains_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/search_trains.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_system/templates/my_system/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/templates/my_system/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_system/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_system/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_system/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/railwayReservationSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/railwayReservationSystem/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/railwayReservationSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/railwayReservationSystem/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,22 +54,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/index.html">
+        <entry file="file://$PROJECT_DIR$/my_system/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_system/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="70" column="58" selection-start-line="70" selection-start-column="58" selection-end-line="70" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -62,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_system/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="280" lean-forward="true" selection-start-line="280" selection-end-line="280" />
+            <state relative-caret-position="306">
+              <caret line="58" column="32" lean-forward="true" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -72,12 +75,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/index_user.html">
+        <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/complaints_user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="663">
+              <caret line="79" column="75" lean-forward="true" selection-start-line="79" selection-start-column="75" selection-end-line="79" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_system/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding>
-                <element signature="e#636#698#0#HTML" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,44 +98,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="-1088">
+              <caret line="92" column="77" lean-forward="true" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="77" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/complaints_user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/cancel_tickets_user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/book_tickets_user.html">
+        <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/animations.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my_system/static/my_system/css/styleBaseUser.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -138,6 +123,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>change</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -148,39 +138,41 @@
         <option value="$PROJECT_DIR$/my_system/templates/my_system/navbar.html" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/footer.html" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/head.html" />
-        <option value="$PROJECT_DIR$/my_system/templates/my_system/book_tickets.html" />
-        <option value="$PROJECT_DIR$/my_system/templates/my_system/cancel_tickets.html" />
         <option value="$PROJECT_DIR$/my_system/forms.py" />
         <option value="$PROJECT_DIR$/users/urls.py" />
         <option value="$PROJECT_DIR$/users/models.py" />
         <option value="$PROJECT_DIR$/users/forms.py" />
         <option value="$PROJECT_DIR$/users/admin.py" />
-        <option value="$PROJECT_DIR$/railwayReservationSystem/settings.py" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/search_trains.html" />
-        <option value="$PROJECT_DIR$/railwayReservationSystem/urls.py" />
         <option value="$PROJECT_DIR$/api/urls.py" />
         <option value="$PROJECT_DIR$/api/serializers.py" />
         <option value="$PROJECT_DIR$/api/models.py" />
-        <option value="$PROJECT_DIR$/my_system/admin.py" />
         <option value="$PROJECT_DIR$/my_system/serializers.py" />
-        <option value="$PROJECT_DIR$/my_system/templates/my_system/signup.html" />
-        <option value="$PROJECT_DIR$/my_system/models.py" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/holiday_foreign.html" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/holiday_india.html" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/complaints.html" />
-        <option value="$PROJECT_DIR$/my_system/templates/my_system/signin.html" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/index_user.html" />
+        <option value="$PROJECT_DIR$/railwayReservationSystem/urls.py" />
+        <option value="$PROJECT_DIR$/railwayReservationSystem/settings.py" />
+        <option value="$PROJECT_DIR$/my_system/templates/my_system/animations.html" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/my_user/book_tickets_user.html" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/my_user/cancel_tickets_user.html" />
+        <option value="$PROJECT_DIR$/my_system/templates/my_system/book_tickets.html" />
+        <option value="$PROJECT_DIR$/my_system/templates/my_system/cancel_tickets.html" />
         <option value="$PROJECT_DIR$/my_system/static/my_system/css/styleBase.css" />
+        <option value="$PROJECT_DIR$/my_system/static/my_system/css/styleBaseUser.css" />
+        <option value="$PROJECT_DIR$/my_system/urls.py" />
+        <option value="$PROJECT_DIR$/my_system/templates/my_system/my_user/index_user.html" />
+        <option value="$PROJECT_DIR$/my_system/templates/my_system/index.html" />
+        <option value="$PROJECT_DIR$/my_system/templates/my_system/my_user/my_profile.html" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/my_user/search_trains_user.html" />
+        <option value="$PROJECT_DIR$/my_system/templates/my_system/signup.html" />
+        <option value="$PROJECT_DIR$/my_system/templates/my_system/signin.html" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_india_user.html" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_foreign_user.html" />
+        <option value="$PROJECT_DIR$/my_system/admin.py" />
+        <option value="$PROJECT_DIR$/my_system/models.py" />
         <option value="$PROJECT_DIR$/my_system/templates/my_system/my_user/complaints_user.html" />
-        <option value="$PROJECT_DIR$/my_system/static/my_system/css/styleBaseUser.css" />
-        <option value="$PROJECT_DIR$/my_system/templates/my_system/index.html" />
-        <option value="$PROJECT_DIR$/my_system/templates/my_system/my_user/index_user.html" />
-        <option value="$PROJECT_DIR$/my_system/urls.py" />
         <option value="$PROJECT_DIR$/my_system/views.py" />
       </list>
     </option>
@@ -196,17 +188,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="railwayReservationSystem" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,6 +222,14 @@
             <path>
               <item name="railwayReservationSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="railwayReservationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="my_system" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="my_system" type="462c0819:PsiDirectoryNode" />
+              <item name="my_user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="railwayReservationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="railwayReservationSystem" type="462c0819:PsiDirectoryNode" />
               <item name="railwayReservationSystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -252,25 +241,36 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="railwayReservationSystem" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="H:/UploadSite2/railwayReservationSystem" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/FirstTry" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\Pyharm Projects\railwayReservationSystem\my_system\static\my_system\images" />
-      <recent name="H:\Pyharm Projects\railwayReservationSystem\my_system\static\my_system\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\Pyharm Projects\railwayReservationSystem\my_system\templates\my_system\my_user" />
       <recent name="H:\Pyharm Projects\railwayReservationSystem\my_system" />
       <recent name="H:\Pyharm Projects\railwayReservationSystem\my_system\static\my_system\images" />
       <recent name="H:\Pyharm Projects\railwayReservationSystem\my_system\templates\my_system" />
+      <recent name="H:\Pyharm Projects\railwayReservationSystem\my_system\static\my_system\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\Pyharm Projects\railwayReservationSystem\my_system\static\my_system\images" />
       <recent name="H:\Pyharm Projects\railwayReservationSystem\my_system\static\my_system\css" />
     </key>
   </component>
@@ -328,21 +328,23 @@
       <workItem from="1558341261875" duration="38215000" />
       <workItem from="1558710521094" duration="3956000" />
       <workItem from="1558781750027" duration="36899000" />
-      <workItem from="1559230938006" duration="24146000" />
+      <workItem from="1559230938006" duration="27719000" />
+      <workItem from="1559630161781" duration="11943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146581000" />
+    <option name="totallyTimeSpent" value="162097000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22692889" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -350,10 +352,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="manage.py@railwayReservationSystem" order="9" sideWeight="0.49848714" visible="true" weight="0.30441898" />
+      <window_info active="true" anchor="bottom" id="manage.py@railwayReservationSystem" order="9" sideWeight="0.4977307" visible="true" weight="0.30441898" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5015129" side_tool="true" weight="0.30441898" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50226927" side_tool="true" weight="0.30441898" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -366,10 +368,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/my_system/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/head.html" />
     <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/navbar.html" />
     <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/footer.html" />
     <entry file="file://$PROJECT_DIR$/my_system/migrations/0004_auto_20190520_2218.py" />
@@ -385,13 +383,6 @@
     <entry file="file://$PROJECT_DIR$/my_system/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/railwayReservationSystem/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/views.py" />
     <entry file="file://$PROJECT_DIR$/api/urls.py" />
     <entry file="file://$PROJECT_DIR$/api/tests.py" />
@@ -399,13 +390,6 @@
     <entry file="file://$PROJECT_DIR$/api/apps.py" />
     <entry file="file://$PROJECT_DIR$/api/admin.py" />
     <entry file="file://$PROJECT_DIR$/api/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/railwayReservationSystem/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_system/migrations/0003_auto_20190527_2217.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -424,23 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_system/static/my_system/images/complaintsBG.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -451,20 +418,6 @@
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/complaints.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -489,114 +442,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/book_tickets.html">
+    <entry file="file://$PROJECT_DIR$/railwayReservationSystem/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/cancel_tickets.html">
+    <entry file="file://$PROJECT_DIR$/railwayReservationSystem/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/search_trains_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_india_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_foreign_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/static/my_system/css/styleBaseUser.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/book_tickets_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="272">
+          <caret line="120" column="26" lean-forward="true" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/cancel_tickets_user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="68">
+          <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+          <folding>
+            <element signature="e#151#189#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/complaints_user.html">
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/book_tickets_user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="68">
+          <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/cancel_tickets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="e#138#176#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/book_tickets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+          <folding>
+            <element signature="e#136#174#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/complaints.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/static/my_system/css/styleBaseUser.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_system/static/my_system/css/styleBase.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/index_user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="390">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding>
-            <element signature="e#636#698#0#HTML" expanded="true" />
+            <element signature="e#825#887#0#HTML" expanded="true" />
+            <element signature="e#4152#4179#0#HTML" expanded="true" />
+            <element signature="e#6799#6827#0#HTML" expanded="true" />
+            <element signature="e#7762#7783#0#HTML" expanded="true" />
+            <element signature="e#8968#8989#0#HTML" expanded="true" />
+            <element signature="e#10116#10137#0#HTML" expanded="true" />
+            <element signature="e#11336#11357#0#HTML" expanded="true" />
+            <element signature="e#12484#12505#0#HTML" expanded="true" />
+            <element signature="e#13632#13653#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2524">
+          <caret line="392" column="14" lean-forward="true" selection-start-line="392" selection-start-column="14" selection-end-line="392" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/my_profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/search_trains_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_india_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="200" column="75" selection-start-line="200" selection-start-column="75" selection-end-line="200" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/holiday_foreign_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="172" column="75" selection-start-line="172" selection-start-column="75" selection-end-line="172" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/animations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1088">
+          <caret line="92" column="77" lean-forward="true" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_system/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="397">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="70" column="58" selection-start-line="70" selection-start-column="58" selection-end-line="70" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_system/templates/my_system/my_user/complaints_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="79" column="75" lean-forward="true" selection-start-line="79" selection-start-column="75" selection-end-line="79" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my_system/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="280" lean-forward="true" selection-start-line="280" selection-end-line="280" />
+        <state relative-caret-position="306">
+          <caret line="58" column="32" lean-forward="true" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>

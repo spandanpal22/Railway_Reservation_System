@@ -27,37 +27,37 @@
 {% block content %}
 
 
-{% if flag_userReg == 1 %}
-    <div class="container-fluid" style="margin-top: 10px;">
-        <div class="row">
-            <div class="col">
-                <div class="alert alert-success" role="alert" style="text-align: center;">
-                    You have been registered successfully.
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    {% if flag_userReg == 1 %}
+        <div class="container-fluid" style="margin-top: 10px;">
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-success" role="alert" style="text-align: center;">
+                        You have been registered successfully.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     {% elif flag_userReg == 0 %}
-    <div class="container-fluid" style="margin-top: 10px;">
-        <div class="row">
-            <div class="col">
-                <div class="alert alert-danger" role="alert" style="text-align: center;">
-                    Registration Unsuccessful
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+        <div class="container-fluid" style="margin-top: 10px;">
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-danger" role="alert" style="text-align: center;">
+                        Registration Unsuccessful
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-{% endif %}
+    {% endif %}
 
 
     <div class="signup">
-        <div class="container">
+        <div class="container bounceInDown animated wow">
             <div class="row">
                 <div class="col"></div>
                 <div class="col-lg-10">
@@ -90,7 +90,8 @@
                             <div class="form-group col-md-6">
                                 <label for="Password">Password</label>
                                 <input type="password" class="form-control" id="Password" name="password"
-                                       placeholder="Password" pattern=".{6,}" title="Six or more characters" required>
+                                       placeholder="Password" pattern=".{8,}"
+                                       title="Eight or more characters.Don't use a simple password." required>
                             </div>
                         </div>
                         <div class="form-row">
