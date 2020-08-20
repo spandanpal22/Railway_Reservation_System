@@ -315,7 +315,7 @@ def searchTrainsUser(request):
 
             filename = '{0}.txt'.format(train_no)
 
-            ts = os.path.join('H:\\Pyharm Projects\\railwayReservationSystem\\uploads\\train_stoppages', filename)
+            ts = os.path.join('D:\\PycharmProjects\\railwayReservationSystem\\uploads\\train_stoppages', filename)
 
             f = open(ts, "r")
             stops = f.readlines()
