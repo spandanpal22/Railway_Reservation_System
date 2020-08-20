@@ -124,3 +124,4 @@ MEDIA_URL = '/uploads/'
 # Activate Django-Heroku.
 django_heroku.settings(locals())
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
