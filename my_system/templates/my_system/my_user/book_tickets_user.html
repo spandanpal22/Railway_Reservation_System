@@ -1,0 +1,193 @@
+{% extends 'my_system/my_user/index_user.html' %}
+{% block title %}Book Tickets{% endblock %}
+{% block head %}
+    <style>
+        .here{
+            opacity: 0.9;
+            padding: 20px;
+            background-color: white;
+
+        }
+        .ticket{
+            background-color: #6ea7ff;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+
+    {% if f == 1 %}
+        <div class="container-fluid" style="margin-top: 10px;">
+            <div class="row">
+                <div class="col">
+                    <div class="alert alert-success" role="alert" style="text-align: center;">
+                        Your ticket has been successfully booked.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endif %}
+
+
+    <div class="ticket" style="padding-bottom: 10px;">
+        <div class="container" style="padding: 10px;">
+            <div class="row flipInX animated wow here" style="border-radius: 10px;">
+                <div class="col"></div>
+                <div class="col-lg-8">
+                    <h1 style="text-align: center;margin: 10px;font-family: 'Roboto Slab', serif;">Book your ticket</h1>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="container" >
+            <form action="{% url 'book_tickets_user' %}" method="post">
+                {% csrf_token %}
+                <div class="container flipInX animated wow" data-wow-delay="1s">
+                    <div class="row here" >
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>Ticket ID : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="tid" id="Tid"
+                                   aria-describedby="Tid" placeholder="{{ tid }}" required
+                                   readonly="readonly">
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>Name : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="name" id="Name"
+                                   aria-describedby="Name" placeholder="{{ username }}" required readonly="readonly">
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>Address : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <textarea type="text" class="form-control" name="address" id="Address"
+                                      aria-describedby="Address" placeholder="Address" required></textarea>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>Mobile Number : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="mobileNo" id="MobileNo"
+                                   aria-describedby="MobileNo" placeholder="Mobile Number" required maxlength="10">
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>Email : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="email" class="form-control" name="email" id="Email"
+                                   aria-describedby="Email" placeholder="Email" required>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>Date of Birth : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="date" class="form-control" name="dob" id="DOB"
+                                   aria-describedby="DOB" placeholder="DOB" required>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>From Station : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="from_station" id="From_station"
+                                   aria-describedby="From_station" placeholder="From Station" required>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>To Station : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="to_station" id="To_station"
+                                   aria-describedby="To_station" placeholder="To Station" required>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>Date of Journey : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="date" class="form-control" name="doj" id="DOJ"
+                                   aria-describedby="DOJ" placeholder="DOJ" required>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>Ticket Number : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="ticket_no" id="Ticket_no"
+                                   aria-describedby="Ticket_no" placeholder="{{ ticket_no }}" required
+                                   readonly="readonly">
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>Train Number : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="train_no" id="Train_no"
+                                   aria-describedby="Train_no" placeholder="Train number" required maxlength="5">
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row here" style="margin-bottom: 5px;">
+                        <div class="col"></div>
+                        <div class="col-lg-2">
+                            <b>Train Name : </b>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="train_name" id="Train_name"
+                                   aria-describedby="Train_name" placeholder="Train name" required>
+                        </div>
+
+                        <div class="col"></div>
+                    </div>
+                    <div style="text-align: center;margin-bottom: 10px;">
+                        <button type="submit" class="btn btn-success col-lg-7" >Book Ticket</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+{% endblock %}
